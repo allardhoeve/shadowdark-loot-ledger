@@ -1,0 +1,11 @@
+LOOT LEDGER — PRIVÉTESTINSTALLATIE
+
+Benodigd: Foundry VTT 14 en het Shadowdark-systeem. Deze module is bedoeld voor privétesten en is nog in ontwikkeling. Voor bepaalde spelersacties moet een GM verbonden zijn.
+
+1. Sluit Foundry VTT af.
+2. Pak loot-ledger-test.zip uit. De ZIP bevat een map loot-ledger.
+3. Plaats die volledige map in je Foundry User Data-map onder Data/modules/. De uiteindelijke locatie moet Data/modules/loot-ledger/module.json zijn.
+4. Start Foundry VTT opnieuw.
+5. Open een wereld met Shadowdark. Ga naar Manage Modules en schakel Loot Ledger in.
+
+De module gebruikt wereldinstellingen voor Ledgergegevens. Gebruik voor deze privétest een testwereld en maak vooraf een back-up van belangrijke wereldgegevens.

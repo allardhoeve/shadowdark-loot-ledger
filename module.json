@@ -1,0 +1,28 @@
+{
+  "id": "loot-ledger",
+  "title": "Loot Ledger",
+  "description": "Track party loot with an independent historical snapshot of each Foundry Item.",
+  "version": "0.2.0",
+  "socket": true,
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.368"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "shadowdark",
+        "type": "system",
+        "compatibility": {
+          "verified": "4.0.6"
+        }
+      }
+    ]
+  },
+  "esmodules": [
+    "scripts/add-loot.js"
+  ],
+  "styles": [
+    "styles/add-loot.css"
+  ]
+}
