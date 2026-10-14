@@ -17,6 +17,7 @@ Controleer API-gedrag in de broncode, niet uit het geheugen:
 
 - `third_party/foundryvtt-shadowdark`: Shadowdark-systeem, git-submodule op de release uit `module.json`.
 - `third_party/foundryvtt`: Foundry VTT-app. Niet in git (propriëtair), dus niet op elke machine aanwezig; gebruik anders `resources/app` van de eigen Foundry-installatie.
+- `third_party/FoundryVTT-ItemPiles`: Item Piles-module (MIT), als inspiratie. Bekijk hoe zij een oplossing hebben gebouwd bij itemoverdracht tussen Actors, GM-afhandeling via sockets, en Shadowdark-ondersteuning (`systems/shadowdark.js`). Neem code alleen over met naamsvermelding.
 
 ## Vaste uitgangspunten
 

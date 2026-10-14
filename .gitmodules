@@ -1,3 +1,6 @@
 [submodule "third_party/foundryvtt-shadowdark"]
 	path = third_party/foundryvtt-shadowdark
 	url = https://github.com/Muttley/foundryvtt-shadowdark
+[submodule "third_party/FoundryVTT-ItemPiles"]
+	path = third_party/FoundryVTT-ItemPiles
+	url = https://github.com/fantasycalendar/FoundryVTT-ItemPiles
