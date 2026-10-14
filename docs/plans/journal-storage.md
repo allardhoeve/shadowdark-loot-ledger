@@ -15,6 +15,17 @@ These have been questioned and settled. Build on them as given.
 - **A missing journal is an error, not a fallback.** Only the GM's client creates the ledger journal. Until then, players see: "The GM must log in once before this works."
 - **Deletes are blocked by `preDelete` hooks that return `false`.** The ledger's own "Delete record" action passes the option `{ lootLedger: true }`, and only that option gets through.
 - **Treasury collisions are accepted.** If two users save the treasury at the same moment, the last save wins.
+- **Every client is trusted.** Validation used to run only on the GM's client. Now it runs in each player's browser, and a modified client could write anything to the ledger. That is acceptable for a home table.
+
+## Rejected options
+
+These were considered and turned down. Leave them out of the design.
+
+- **Give players `SETTINGS_MODIFY`.** That permission also lets them change every core and module setting.
+- **User-scope settings or User flags.** Each player can write only their own copy, so there is no shared ledger.
+- **An Actor subtype, like the Party.** Shadowdark's Actor class assumes every Actor has ability scores, and the Party needs a stub for that (`~/devel/foundry-homebrew/module/src/party-actor.js`). An Actor can also be placed as a token, which the ledger never needs.
+- **A startup hook that gives every user ownership.** Only a GM can change ownership, so the hook would run only when a GM logs in. Default Owner covers new players without it.
+- **Hiding the journal from the sidebar.** A `renderJournalDirectory` hook only changes the display, not the permissions, and breaks when Foundry changes the sidebar.
 
 ## Open decision: crash safety
 
